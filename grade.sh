@@ -1,6 +1,8 @@
 CPATH='.:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar'
 
-if [[ $OSTYPE" == "win32 ]]; then CPATH='.;lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar'
+if [[ $OSTYPE" == "win32 ]]; then CPATH='.;lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar' 
+exit
+fi
 
 rm -rf student-submission
 rm -rf grading-area
