@@ -23,6 +23,8 @@ javac -cp $CPATH ListExamples.java TestListExamples.java
 
 java -cp $CPATH org.junit.runner.JUnitCore TestListExamples 1> errors.txt
 
+echo errors.txt
+
 grep "Tests run:" errors.txt > final_score.txt
 if [[ -e $? ]]
 then echo $? > errors.txt
